@@ -19,9 +19,17 @@ function evento (ev){
     var url = $(this).attr('action');  
     var datos = $(this).serialize();	   
     $.get(url, datos, function(resultado){  	    
-      $('#resultado').html(resultado);	    
-  	});  
-    $('#resultado').show();
+      if($.trim(resultado)!="Error"){
+        $('#resultado').html(resultado); 
+        $('#resultado').show();
+        $('.exito').show();
+        $('.error').hide();
+      }else{
+        $('.error').show(); 
+        $('.exito').hide();
+        $('#resultado').hide();
+      }	    
+  	});
   });
   $.mask.definitions['H']='[012]';
   $.mask.definitions['N']='[012345]';

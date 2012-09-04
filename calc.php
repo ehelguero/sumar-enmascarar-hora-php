@@ -16,10 +16,13 @@ if($_GET['hora'] && $_GET['hora']!=" "){
 	$control_dia = date('w'); 
 	
 	if($control_dia == 5){
-	echo "+7 horas y 00 minutos --> ". date('H:i',strtotime($fecha . '+7 hour'));	
+		echo "+7 horas y 00 minutos --> ". date('H:i',strtotime($fecha . '+7 hour'));	
 	}
 	else{
 		echo "+9 horas y 25 minutos --> ". date('H:i',strtotime($fecha . '+9 hour +25 minutes'));
 		}
 	}
+}else{
+	echo "Error";
+}
 ?>		
