@@ -18,16 +18,20 @@
 	<![endif]-->
 </head>
 <body>
-	<div id="contenedor">
-		<div id="calc_salida">
-			<h1>Hora de entrada</h1>
-	    	<form id="form_calc" action="calc.php" method="post" accept-charset="utf-8">
-		    	<input id="time" type="text" name="hora" value="" onblur="valida(this.value);" />
-	    		<input type="submit" name="submit" value="Calcular Salida" class="btn btn-primary btn-large" />
-	    	</form>
+	<div id="wrapper">
+		<div id="contenedor">
+			<h1><img src="img/logo.png" alt="Johny´s Code" /></h1>
+			<div id="calc_salida">
+				<h2>Hora de entrada</h2>
+				<p class="exito">La hora señalada es correcta.</p>
+				<p clasS="error">La hora introducida es incorrecta.</p>
+		    	<form id="form_calc" action="calc.php" method="post" accept-charset="utf-8">
+			    	<input id="time" type="text" name="hora" value="" onblur="valida(this.value);" />
+		    		<input type="submit" name="submit" value="Calcular Salida" class="btn btn-primary btn-large" />
+		    	</form>
+			</div>
+			<div id="resultado"></div>
 		</div>
-
-		<div id="resultado"></div>
 	</div>
 </body>
 </html>
