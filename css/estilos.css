@@ -1,8 +1,19 @@
+/*********************************************************
+Hoja de estilos 1.0
+Realizada por: Johnatan Rodriguez Perdomo jrperdomo.24@gmail.com
+Fecha: 04/09/2012
+*********************************************************/
+
 body{
 	background: #b6b6b6;
 	font-family: arial;
 	margin: 0;
 	padding: 0;
+}
+
+#wrapper { 
+	width: 300px;
+	margin: 0 auto;
 }
 
 #contenedor{
@@ -19,4 +30,37 @@ body{
 #resultado{
 	margin-top: 6px;
 	display: none;
+}
+
+h1{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+h2 {
+	color: #fff;
+	background-color: #000;
+	border-bottom: 1px solid #fff;
+	margin: 3px 0 10px 0;
+}
+
+/* Mensaje de error */
+.error{
+	display: none;
+	border-radius: 5px;
+	background-color: #ffc4c4;
+	width: 290px;
+	font-size: 12px;
+	font-style: italic;
+}
+
+/* Mensaje de exito */
+.exito{
+	display: none;
+	border-radius: 5px;
+	background-color: #d9eacc;
+	width: 290px;
+	font-size: 12px;
+	font-style: italic;
 }
