@@ -1,0 +1,22 @@
+body{
+	background: #b6b6b6;
+	font-family: arial;
+	margin: 0;
+	padding: 0;
+}
+
+#contenedor{
+	margin: 10px;
+}
+
+#calc_salida, #resultado{
+	background: #eee;
+	border-radius: 6px;
+	padding: 6px;
+	width: 290px;
+}
+
+#resultado{
+	margin-top: 6px;
+	display: none;
+}
